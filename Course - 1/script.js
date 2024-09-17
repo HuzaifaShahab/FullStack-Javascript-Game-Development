@@ -9,8 +9,9 @@ let previousInterval = 0;
 const canvasContext = canvas.getContext("2d");
 
 const gradient = canvasContext.createLinearGradient(0, 0, canvas.width, canvas.height);
-gradient.addColorStop(0, "skyblue"); // Start with skyblue at 0%
-gradient.addColorStop(1, "lightgreen"); // End with lightgreen at 100%
+gradient.addColorStop(0, "lightgreen"); // light red
+gradient.addColorStop(1, "skyblue"); // peachy orange
+
 
 const ravens = [];
 const explosions = [];
