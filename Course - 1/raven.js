@@ -23,7 +23,6 @@ class Raven{
              this.update(0);
         }
     }
-
     update(difference,gameStats){
         if(this.spriteX <= -this.spriteWidth){
             gameStats.gameEnd = true;
@@ -44,9 +43,9 @@ class Raven{
             console.log(difference);
             console.log("Updated CurrentTime:", this.currentTime);
         }
+        
         this.#draw();
     }
-
     #draw(){   
         this.ctx.drawImage(
             this.image,

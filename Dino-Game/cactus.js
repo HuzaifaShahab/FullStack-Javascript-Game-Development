@@ -5,6 +5,7 @@ class Cactus {
         this.cactusHeight = 600 * 0.3;
         this.groundY = 400; // The y-position of the cactus (ground level)
         this.xPosition = xPosition; // Start cactus off-screen to the right
+        console.log("X position inside Cactus Class"+xPosition);
         this.speed = 25; // Speed at which the cactus moves to the left
 
         this.image = new Image();

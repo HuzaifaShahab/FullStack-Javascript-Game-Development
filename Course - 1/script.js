@@ -38,12 +38,13 @@ function createRaven(){
     }
 }
 
-function drawScore (){
-canvasContext.beginPath();
-canvasContext.fillStyle="black";
-canvasContext.font = "34px Arial";
-canvasContext.fillText(score.toString(),100,100);
+function drawScore() {
+    canvasContext.beginPath();
+    canvasContext.fillStyle = "black";
+    canvasContext.font = "34px Arial";
+    canvasContext.fillText(score.toString(), 100, 100);  // Display score at position (100, 100)
 }
+
 
 function animate(){
     const timestamp = new Date().getTime();
