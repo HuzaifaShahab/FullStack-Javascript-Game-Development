@@ -12,7 +12,7 @@ class Rocket {
         this.spriteX = 10; 
         this.spriteY = 300; 
 
-        this.speed = 5; 
+        this.speed = 8; 
         this.image = new Image();
         this.image.src = "./rocket.png";
         

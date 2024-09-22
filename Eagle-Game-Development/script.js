@@ -13,11 +13,6 @@ const gradient = canvasCtx.createLinearGradient(0, 0, canvas.width, canvas.heigh
 gradient.addColorStop(0, "skyblue");
 gradient.addColorStop(1, "lightgreen");
 
-// const audio = new Audio();
-// audio.src="./rocket.wav";
-// audio.loop=true;
-// audio.play();
-
 let previousInterval = 0;
 let currentInterval = 0;
 const fireball = [];
@@ -31,21 +26,17 @@ const gameStats = {
     gameEndCount: 0,
     gameEnd: false
 };
-
 function createFireBalls(){
     if(fireball.length < fireballCount){
        fireball.push(new FireBall(canvasCtx));
     }
 }
-
 function createGifts(){
     if(gift.length < giftCount){
        gift.push(new Gift(canvasCtx));
     }
 }
-
-function drawScore(){
-    // audio.play();
+const drawScore = () =>{
     canvasCtx.beginPath();
     canvasCtx.fillRect(1480, 20, 170, 50); 
     canvasCtx.fillStyle = "Red"; 
@@ -53,7 +44,7 @@ function drawScore(){
     canvasCtx.fillText("Score: ", 1500, 50); 
     canvasCtx.fillText(gameStats.score, 1600, 50); 
 }
-function drawGameEnd(){
+const drawGameEnd = () =>{
     canvasCtx.beginPath();
     canvasCtx.clearRect(0,0,canvas.width,canvas.height);
     canvasCtx.fillStyle = "Red";

@@ -34,7 +34,7 @@ class Gift {
             this.spriteY = Math.random() * (this.ctx.canvas.height - this.shrinkHeight);
         }
     if(this.checkCollision(rocket,gameStats)){
-        // this.audio.play();
+        this.audio.play();
         gameStats.score+=10;
          if(this.currentTime > this.timeInterval){
              this.currentTime = 0;
